@@ -481,7 +481,7 @@ class ReactNativeZoomableView extends Component<
 
     // Only supports 2 touches and below,
     // any invalid number will cause the gesture to end.
-    if (gestureState.numberActiveTouches <= 2) {
+    if (gestureState.numberActiveTouches === 2) {
       if (!this.gestureStarted) {
         this._handlePanResponderGrant(e, gestureState);
       }
@@ -511,7 +511,7 @@ class ReactNativeZoomableView extends Component<
       }
       this.gestureType = 'pinch';
       this._handlePinching(e, gestureState);
-    } else if (gestureState.numberActiveTouches === 1) {
+    } else if (gestureState.numberActiveTouches === 2) {
       if (
         this.longPressTimeout &&
         (Math.abs(gestureState.dx) > 5 || Math.abs(gestureState.dy) > 5)

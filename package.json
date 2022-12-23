@@ -1,5 +1,5 @@
 {
-  "name": "@santhoshkumar-fox/react-native-zoomable-view",
+  "name": "sample-zoomer",
   "version": "0.0.1",
   "description": "A view component for react-native with pinch to zoom, tap to move and double tap to zoom capability.",
   "main": "lib/commonjs/index",
